@@ -1,0 +1,29 @@
+import React from 'react';
+import { Link } from 'react-router';
+
+const ProductsCard = ({ product }) => {
+    const {_id,price,image,title}=product
+    console.log(product);
+
+    return (
+        <Link to={`/productDetails/${_id}`}>
+            <div className="card bg-base-100 w-96 shadow-sm border border-b-blue-400">
+                <figure className="h-64">
+                    <img
+                        src={image}
+                        className="w-[200px] h-auto object-contain rounded-xl"
+                        alt="product picture" />
+                </figure>
+                <div className="card-body">
+                    <h2 className="card-title">{title}</h2>
+                    <p className='font-semibold'>Price : {price}</p>
+                    <div className="card-actions w-full">
+                        <button className="btn btn-primary w-full">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </Link>
+    );
+};
+
+export default ProductsCard;
