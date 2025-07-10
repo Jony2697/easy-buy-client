@@ -22,7 +22,8 @@
 ### Frontend
 - **React.js**
 - **React Router**
-- **Tailwind CSS** *(or your actual styling method)*
+- **Tailwind CSS** 
+- **DaisyUI** 
 - **Context API** + `useState` for state management
 - **Vite** (for fast build & dev environment)
 
