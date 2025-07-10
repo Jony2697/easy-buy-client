@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const ProductsCard = ({ product }) => {
-    const {_id,price,image,title}=product
-    console.log(product);
+    const {_id,price,image,title}=product;
 
     return (
-        <Link to={`/productDetails/${_id}`}>
+        <Link to={`/productDetails/${_id}`} className='max-w-7xl mx-auto'>
             <div className="card bg-base-100 w-96 shadow-sm border border-b-blue-400">
                 <figure className="h-64">
                     <img

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import ProductDetails from "../pages/ProductDetails";
+import Cart from "../pages/Cart";
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,12 @@ const router = createBrowserRouter([
           path:'/productDetails/:id',
           loader:({params})=>fetch(`http://localhost:3000/products/${params.id}`),
           Component:ProductDetails
+        },
+        {
+          path:'/addedCart',
+          Component:Cart
         }
+
     ]
   },
 ]);
