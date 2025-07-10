@@ -24,8 +24,8 @@
 - **React Router**
 - **Tailwind CSS** 
 - **DaisyUI** 
-- **Context API** + `useState` for state management
-- **Vite** (for fast build & dev environment)
+- **Context API** + `useState` 
+- **Vite** 
 
 ### Backend
 - **Node.js + Express**
