@@ -1,12 +1,82 @@
-# React + Vite
+# 🛒 easyBuy - Mini E-Commerce SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**easyBuy** is a modern, responsive Single Page Application (SPA) e-commerce platform built with **React.js** on the frontend and **Node.js/Express** on the backend. It allows users to browse products, view product details, manage a shopping cart, and simulate a checkout — all without requiring authentication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+👉 [https://incandescent-lolly-ce5983.netlify.app/](https://incandescent-lolly-ce5983.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 GitHub Repositories
+
+- 🔗 [Client Repository](https://github.com/Jony2697/easy-buy-client.git)
+- 🔗 [Server Repository](https://github.com/Jony2697/easy-buy-server.git)
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+- **React.js**
+- **React Router**
+- **Tailwind CSS** *(or your actual styling method)*
+- **Context API** + `useState` for state management
+- **Vite** (for fast build & dev environment)
+
+### Backend
+- **Node.js + Express**
+- **CORS, dotenv**
+- **MongoDB**
+
+---
+
+## 📄 Features
+
+### 🏠 Home Page
+- Product grid with at least 6 items
+- Product cards display image, title, price, and “Add to Cart” button
+- Clicking on a card navigates to Product Details
+
+### 📃 Product Detail Page
+- Displays product image, name, description, and price
+- “Add to Cart” functionality
+
+### 🛒 Cart Sidebar
+- Slide-in/out sidebar for the shopping cart
+- Quantity controls (+/-) per product
+- Real-time total amount
+- “Checkout” button opens modal
+
+### 💳 Checkout Modal
+- Modal form with:
+  - Name
+  - Email
+  - Address
+- “Submit” simulates order placement (no payment logic)
+
+---
+
+## 🧪 Backend API Features
+
+- Simple REST API using Express
+- Serves product data from JSON file (or database)
+- Endpoint example:
+  - `GET /products` – Fetch all products
+
+---
+
+## 🚀 How to Run Locally
+
+### Frontend
+
+```bash
+git clone https://github.com/Jony2697/easy-buy-client.git
+cd easy-buy-client
+npm install
+npm run dev 
+
+
+
