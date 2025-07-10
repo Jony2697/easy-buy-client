@@ -6,7 +6,7 @@ const ProductsCard = ({ product }) => {
 
     return (
         <Link to={`/productDetails/${_id}`} className='max-w-7xl mx-auto'>
-            <div className="card bg-base-100 w-96 shadow-sm border border-b-blue-400">
+            <div className="card bg-base-100 w-96 shadow-sm border border-blue-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200">
                 <figure className="h-64">
                     <img
                         src={image}

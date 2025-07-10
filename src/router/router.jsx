@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/productDetails/:id',
-          loader:({params})=>fetch(`http://localhost:3000/products/${params.id}`),
+          loader:({params})=>fetch(`https://easy-buy-server-omega.vercel.app/products/${params.id}`),
           Component:ProductDetails
         },
         {

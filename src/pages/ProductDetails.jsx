@@ -10,11 +10,11 @@ const ProductDetails = () => {
 
   const { addToCart } = useCart();
   const [refreshKey, setRefreshKey] = useState(0);
-
+  
   const handleAddToCart = () => {
     addToCart(singleProduct);
 
-    fetch('http://localhost:3000/addedProducts', {
+    fetch('https://easy-buy-server-omega.vercel.app/addedProducts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

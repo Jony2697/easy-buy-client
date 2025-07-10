@@ -11,7 +11,7 @@ const AddedProducts = ({ refreshTrigger }) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const fetchCartItems = () => {
-    fetch('http://localhost:3000/addedProducts')
+    fetch('https://easy-buy-server-omega.vercel.app/addedProducts')
       .then(res => res.json())
       .then(data => setDbCartItems(data))
       .catch(err => console.error('Failed to fetch cart items:', err));
@@ -30,7 +30,7 @@ const AddedProducts = ({ refreshTrigger }) => {
     }
 
     
-    fetch(`http://localhost:3000/addedProducts/${id}`, {
+    fetch(`https://easy-buy-server-omega.vercel.app/addedProducts/${id}`, {
       method: 'PUT', 
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const AddedProducts = ({ refreshTrigger }) => {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3000/addedProducts/${id}`, {
+    fetch(`https://easy-buy-server-omega.vercel.app/addedProducts/${id}`, {
       method: 'DELETE',
     })
       .then(res => res.json())
